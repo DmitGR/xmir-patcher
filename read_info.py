@@ -199,7 +199,7 @@ class DevInfo():
       if addr < 0:
         if name == "m25p80":
           addr = 0xFFFFFFFF
-        else
+        else:
           if re.search(f'mounted UBI device ., volume ., name "{name}"'):
             addr = 0xFFFFFFFF
         part['addr'] = addr
